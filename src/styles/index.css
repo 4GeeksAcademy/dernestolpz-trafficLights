@@ -1,12 +1,52 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
 
-*/
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.red.on {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+
+.yellow.on {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+
+
+.green.on {
+    background-color: green;
+    box-shadow: 0 0 20px green;
+}
+
+
+.light.on {
+    transform: scale(1.1);
+}
